@@ -5,6 +5,7 @@ import { ModeToggle } from "./ModeToggle"
 function Header() {
   return (
     <header className="flex justify-end items-center p-4 gap-4 h-16">
+              <ModeToggle />
         <SignedOut>
             <SignInButton />
             <SignUpButton />
@@ -12,7 +13,7 @@ function Header() {
         <SignedIn>
             <UserButton />
         </SignedIn>
-        <ModeToggle />
+
     </header>
   )
 }
